@@ -71,7 +71,7 @@ El fondo de esta páginas será un fondo negro, en el que irán apareciendo svg 
     <h3>Noticias</h3>
     <ul>
         <li>
-            En otra de las páginas lo que habrá serán noticias importantes sobre el mundo de la astronomía, como despegues o novedades en naves, etc. El usuario podrá almacenar, o darle favorito a una de estas noticias y quedarán guardadas en perfil.
+            En otra de las páginas lo que habrá serán noticias importantes sobre el mundo de la astronomía, como despegues o novedades en naves, etc. El usuario podrá almacenar, o darle favorito a una de estas noticias y quedarán guardadas en perfil. Este punto me gustaría hacerlo con la ayuda de una api  que de información sobre este tema.
         </li>
     </ul>
 </ul>
