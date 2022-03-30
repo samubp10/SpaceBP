@@ -110,3 +110,7 @@ solar](https://user-images.githubusercontent.com/73947252/160790748-75a3ff84-927
 
 <h2>Enlace al prototipo/esquema de mi página web</h2>
 He de aclarar que este es meramente un boceto, la página web va a tener un aspecto totalmente diferente a este. Este prototipo solo sirve para saber como va a estar estructurada la página. https://www.figma.com/file/EaCTyHyz2zIQh3lrWcPsyQ/Prototipo-Proyecto-final?node-id=0%3A1
+
+<h2>Diagrama E/R</h2>
+Las relaciones muchos a muchos entre usuarios - fotos y usuarios - noticias, son las noticias y los usuarios guardados
+![DiagramaER](https://user-images.githubusercontent.com/73947252/160834805-3bb2de36-bc5d-4c8a-b958-fd7c9f8f88e5.png)
