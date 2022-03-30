@@ -113,4 +113,5 @@ He de aclarar que este es meramente un boceto, la página web va a tener un aspe
 
 <h2>Diagrama E/R</h2>
 Las relaciones muchos a muchos entre usuarios - fotos y usuarios - noticias, son las noticias y los usuarios guardados
+
 ![DiagramaER](https://user-images.githubusercontent.com/73947252/160834805-3bb2de36-bc5d-4c8a-b958-fd7c9f8f88e5.png)
