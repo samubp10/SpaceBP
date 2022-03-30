@@ -116,3 +116,22 @@ Las relaciones muchos a muchos entre usuarios - fotos y usuarios - noticias, son
 
 
 ![DiagramaER](https://user-images.githubusercontent.com/73947252/160843575-045d9d9a-7d17-4734-b644-506d9042b783.png)
+
+<h2>Tecnologías</h2>
+
+Las tecnologías que voy a utilizar van a ser las solicitadas/obligatorias, de los requisitos escritos por los profesores:
+<ul>
+    <li>
+        Backend = Laravel
+    </li>
+    <li>
+        Frontend: 
+        <ul>
+            <li>Html</li>
+            <li>CSS3</li>
+            <li>Ajax</li>
+            <li>JQuery</li>
+        </ul>
+    </li>
+</ul>
+En el caso de cambiar alguna de estas tecnologías por otras, lo hablaré con el profesor pertinente de esa asignatura.
