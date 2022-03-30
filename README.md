@@ -13,7 +13,7 @@ Todo lo escrito a partir de aquí está sujeto a cambios.
         <li>1 enlace para el "Sign in" o "autenticación"</li>
         <li>1 enlace para el "Sign up" o "Registro"</li>
     </ul>
-    <li>Tendrá un fondo de temática espacial (aún por determinar si será una simple imagen o algo más complejo como en las páginas cuando entras en la aplicación)</li>
+    <li>Tendrá un vídeo de fondo de temática espacial</li>
     <li>En el centro de la página tendrá una breve descripción del sitio web</li>
 </ul>
 
