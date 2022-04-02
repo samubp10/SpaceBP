@@ -131,6 +131,8 @@ Las tecnologías que voy a utilizar van a ser las solicitadas/obligatorias, de l
             <li>CSS3</li>
             <li>Ajax</li>
             <li>JQuery</li>
+            <li>A-frame</li>
+            <li>También me estoy planeando utilizar Livewire, pero aún me tengo de documentar sobre esta tecnología</li>
         </ul>
     </li>
 </ul>
