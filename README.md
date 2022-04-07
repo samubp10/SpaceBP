@@ -146,6 +146,9 @@ usuarios se han guardado/le han dado favoritos.
 ![DiagramaER](https://user-images.githubusercontent.com/73947252/161511577-8fc1a591-5d0c-4f76-87b1-29d73b556995.png)
 
 
+![ERSpace](https://user-images.githubusercontent.com/73947252/162227703-83b5129a-e7e6-4012-99ab-eb63e94b5d31.png)
+
+
 <h2>Tecnologías</h2>
 
 Las tecnologías que voy a utilizar van a ser las solicitadas/obligatorias, de los requisitos escritos por los
