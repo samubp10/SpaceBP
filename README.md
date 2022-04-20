@@ -171,6 +171,6 @@ profesores:
 </ul>
 En el caso de cambiar alguna de estas tecnologías por otras, lo hablaré con el profesor pertinente de esa asignatura.
 
-<h2>Despliege de la aplicación</h2>
+<h2>Despliegue de la aplicación</h2>
 
-Para el despliege de la aplicación tengo pensado utilizar es Amazon Web Services, tanto para la base de datos como para web en sí y sería en 2 máquinas separadas.
+Para el despliegue de la aplicación tengo pensado utilizar es Amazon Web Services, tanto para la base de datos como para web en sí y sería en 2 máquinas separadas.
