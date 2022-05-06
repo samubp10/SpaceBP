@@ -1,0 +1,25 @@
+#container-video {
+    /* Telling our absolute positioned video to 
+            be relative to this element */
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    /* Will not allow the video to overflow the 
+            container */
+    /* Centering the container's content vertically 
+            and horizontally */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    #bg-video {
+        /** Simulationg background-size: cover */
+        position: fixed;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+}

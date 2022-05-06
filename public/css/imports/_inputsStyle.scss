@@ -1,0 +1,21 @@
+@mixin inputStyle {
+    background: transparent;
+    color: white;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.725);
+    border-radius: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    font-size: 20px;
+    border: 3px white solid;
+    border-radius: 20px;
+    text-shadow: 0 0 7px #fff;
+    min-width: 370px;
+    &:focus {
+        box-shadow: 3px -3px 30px white, -3px 3px 30px white;
+        outline: none;
+    }
+}

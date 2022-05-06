@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "fuenteLogo";
+    src: url("../fonts/Retronoid.otf");
+}
+
+#logo {
+    margin-top: 20px;
+    width: 120px;
+    height: 145px;
+    text-align: left;
+    #logoText {
+        font-family: 'fuenteLogo';
+        font-size: 100px;
+        fill: white;
+    }
+}

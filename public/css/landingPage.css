@@ -1,0 +1,284 @@
+.language-switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: white;
+  text-shadow: 0 2px 10px white;
+  width: 100%;
+  height: 75px;
+  margin-top: 60%;
+}
+
+.language-switch a.selected {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  border: 3px solid white;
+  border-radius: 20px;
+  padding: 0.5em;
+  opacity: 1;
+  color: white;
+  height: 60px;
+}
+
+.language-switch a {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  padding: 0.2em;
+  padding: 0;
+  opacity: 0;
+  color: white;
+  height: 0;
+}
+
+.language-switch:hover a {
+  opacity: 1;
+  color: white;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.language-switch:hover a.selected {
+  border-radius: 0;
+  border: none;
+  border-bottom: 3px solid white;
+}
+
+.language-switch:hover {
+  border: 3px solid white;
+  border-radius: 20px;
+  color: white;
+}
+
+#container-video {
+  /* Telling our absolute positioned video to 
+            be relative to this element */
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  /* Will not allow the video to overflow the 
+            container */
+  /* Centering the container's content vertically 
+            and horizontally */
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: -1;
+}
+
+#container-video #bg-video {
+  /** Simulationg background-size: cover */
+  position: fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+@font-face {
+  font-family: "fuenteLogo";
+  src: url("../fonts/Retronoid.otf");
+}
+
+#logo {
+  margin-top: 20px;
+  width: 120px;
+  height: 145px;
+  text-align: left;
+}
+
+#logo #logoText {
+  font-family: 'fuenteLogo';
+  font-size: 100px;
+  fill: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font: inherit;
+  font-family: 'fuente1';
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "fuente1";
+  src: url("../fonts/Xolonium-Regular.ttf");
+}
+
+@font-face {
+  font-family: "fuente2";
+  src: url("../fonts/Montalban.otf");
+}
+
+body {
+  background-color: black;
+  margin-top: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.wrapper .header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.1fr 1.5fr 0.1fr 1.5fr 0.1fr;
+      grid-template-columns: 0.1fr 1.5fr 0.1fr 1.5fr 0.1fr;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.wrapper .header .header-logo {
+  -ms-grid-column: 2;
+  grid-column: 2 / 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.wrapper .header .sign-buttons {
+  text-shadow: 0 0 7px #fff;
+  -ms-grid-column: 4;
+  grid-column: 4 / 4;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'fuente2';
+}
+
+.wrapper .header .sign-buttons #sign-up {
+  margin-right: 30px;
+  color: white;
+  text-decoration: none;
+  border: 3px white solid;
+  padding: 7px 13px 13px 13px;
+  border-radius: 20px;
+  text-shadow: 0 0 7px #fff;
+  font-size: 25px;
+}
+
+.wrapper .header .sign-buttons #sign-up:hover {
+  -webkit-box-shadow: 3px -3px 30px white, -3px 3px 30px white;
+          box-shadow: 3px -3px 30px white, -3px 3px 30px white;
+}
+
+.wrapper .header .sign-buttons #sign-in {
+  color: white;
+  text-decoration: none;
+  border: 3px white solid;
+  padding: 7px 13px 13px 13px;
+  border-radius: 20px;
+  text-shadow: 0 0 7px #fff;
+  font-size: 25px;
+}
+
+.wrapper .header .sign-buttons #sign-in:hover {
+  -webkit-box-shadow: 3px -3px 30px white, -3px 3px 30px white;
+          box-shadow: 3px -3px 30px white, -3px 3px 30px white;
+}
+
+.wrapper .header .language-switch {
+  -ms-grid-column: 3;
+  grid-column: 3 / 3;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.wrapper .wrapper-content {
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper .wrapper-content #content {
+  margin-top: 5%;
+  color: white;
+  text-align: center;
+}
+
+.wrapper .wrapper-content .content-name {
+  font-size: 50px;
+  font-family: 'fuente2';
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff;
+  line-height: 3;
+}
+
+.wrapper .wrapper-content .content-description {
+  font-size: 30px;
+  font-family: 'fuente1';
+  margin-left: 20%;
+  margin-right: 20%;
+  text-shadow: 0 0 7px #fff;
+}
+
+.wrapper .wrapper-content .content-explore {
+  margin-top: 5%;
+}
+
+.wrapper .wrapper-content .content-explore #explore {
+  color: white;
+  text-decoration: none;
+  border: 3px white solid;
+  padding: 7px 13px 13px 13px;
+  border-radius: 20px;
+  text-shadow: 0 0 7px #fff;
+  font-size: 25px;
+  font-size: 30px;
+}
+
+.wrapper .wrapper-content .content-explore #explore:hover {
+  -webkit-box-shadow: 3px -3px 30px white, -3px 3px 30px white;
+          box-shadow: 3px -3px 30px white, -3px 3px 30px white;
+}
+/*# sourceMappingURL=landingPage.css.map */

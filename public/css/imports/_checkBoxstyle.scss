@@ -1,0 +1,36 @@
+.link1 {
+    input {
+        display: none;
+    }
+    label {
+        width: 53px;
+        height: 28px;
+        box-sizing: border-box;
+        border: 3px solid;
+        float: left;
+        border-radius: 100px;
+        position: relative;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    input[type="checkbox"]:checked+label {
+        background: rgba(0, 0, 0, 0.725)
+    }
+    input[type="checkbox"]:checked+label:before {
+        left: 25px;
+    }
+    label:before {
+        transition: 0.3s ease;
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background: white;
+        left: 2px;
+        top: 2px;
+        box-sizing: border-box;
+        border: 3px solid;
+        color: black;
+        border-radius: 100px;
+    }
+}
