@@ -149,6 +149,30 @@ usuarios se han guardado/le han dado favoritos.
 ![ERSpace](https://user-images.githubusercontent.com/73947252/162227703-83b5129a-e7e6-4012-99ab-eb63e94b5d31.png)
 
 
+<h2>Semanas</h2>
+
+<h3>Semana 1</h3>
+
+<ul>
+    <li>Landing page</li>    
+    <li>Autenticacíon</li>
+    <li>Registro</li>
+    <li>El estilo de las páginas anteriormente dichas</li>
+</ul>
+
+<h3>Semana 2</h3>
+
+<ul>
+
+</ul>
+
+<h3>Semana 3</h3>
+
+<ul>
+    
+</ul>
+
+
 <h2>Tecnologías</h2>
 
 Las tecnologías que voy a utilizar van a ser las solicitadas/obligatorias, de los requisitos escritos por los
