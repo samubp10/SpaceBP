@@ -1,19 +1,15 @@
 <x-guest-layout>
 
-    <x-slot name="logo">
-        <x-jet-authentication-card-logo />
-    </x-slot>
 
-    <x-jet-validation-errors class="mb-4" />
 
-    <form class="auth" method="POST" action="{{ route('register') }}">
+    <form class="auth" method="POST" action="{{ route('register', app()->getLocale()) }}">
         @csrf
-
+        <x-jet-validation-errors />
 
         <input type="text" class="input1" id="name" type="text" name="name" :value="old('name')" required
             autofocus autocomplete="name" placeholder="{{ __('Name') }}" />
 
-        <input type="text" class="input2" id="email" name="email" value="{{ old('email') }}" required autofocus
+        <input type="email" class="input2" id="email" name="email" value="{{ old('email') }}" required autofocus
             placeholder="{{ __('Email') }}" />
 
         <input type="password" class="input3" id="password" name="password" required
@@ -40,7 +36,7 @@
             @endif --}}
 
 
-        <a class="link3" href="{{ route('login') }}">
+        <a class="link3" href="{{ route('login', app()->getLocale()) }}">
             {{ __('Already registered?') }}
         </a>
 

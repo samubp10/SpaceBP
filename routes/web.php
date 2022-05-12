@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,22 +16,56 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return redirect('/en/');
+    if (Auth::check()) {
+        return redirect(config('app.routeLocale') . '/outerSpace');
+    } else {
+        return redirect('/en/');
+    }
 });
+// Route::get('es/login', function () {
+//     if (Auth::check()) {
+//         return redirect('/es/outerSpace');
+//     } else {
+//         return redirect('/es/login');
+//     }
+// });
+// Route::get('es/register', function () {
+//     if (Auth::check()) {
+//         return redirect('/es/outerSpace');
+//     } else {
+//         return redirect('/es/login');
+//     }
+// });
 
 Route::get('/dashboard', function () {
-    return redirect('/en/dashboard');
+    return redirect(config('app.routeLocale') . '/outerSpace');
 });
+// Route::get(config('app.routeLocale') . '/dashboard', function () {
+//     return redirect(config('app.routeLocale') . '/outerSpace');
+// });
+
 
 Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-zA-Z]{2}'], 'middleware' => ['locale']], function () {
     Route::get('/', function () {
-        return view('landingPage.landingPage');
+        if (Auth::check()) {
+            return redirect(config('app.routeLocale') .'/outerSpace');
+        } else {
+            return view('landingPage.landingPage');
+        }
     });
     Route::get('/login', function () {
-        return view('auth.login');
+        if (Auth::check()) {
+            return redirect('/es/outerSpace');
+        } else {
+            return view('auth.login');
+        }
     });
     Route::get('/register', function () {
-        return view('auth.register');
+        if (Auth::check()) {
+            return redirect('/es/outerSpace');
+        } else {
+            return view('auth.register');
+        }
     });
 
     Route::middleware([
@@ -38,11 +73,12 @@ Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-zA-Z]{2}'], 'm
         config('jetstream.auth_session'),
         'verified'
     ])->group(function () {
-        Route::get('/dashboard', function () {
+        Route::get('/outerSpace', function () {
             return view('dashboard');
         })->name('dashboard');
     });
-   
 });
 
 require_once __DIR__ . './fortify.php';
+require_once __DIR__ . './jetstream.php';
+

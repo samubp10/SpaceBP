@@ -27,7 +27,7 @@ class RedirectIfAuthenticated
             if (Auth::guard($guard)->check()) {
                 $path = url()->previous();
                 $path = explode("/", $path);
-                return redirect($path[5] . '/dashboard');
+                return redirect($path[5] . '/outerSpace');
             }
         }
 

@@ -66,9 +66,7 @@ return [
     |
     */
 
-    //'home' => app()->currentLocale() . '/dashboard',
-    // 'home' => $path[5] . '/dashboard',
-    'home' => config('app.routeLocale') . '/dashboard',
+    'home' => config('app.routeLocale') . '/outerSpace',
 
     /*
     |--------------------------------------------------------------------------

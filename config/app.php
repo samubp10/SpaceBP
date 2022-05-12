@@ -15,7 +15,7 @@ return [
 
     'name' => env('APP_NAME', 'SpaceBP'),
 
-    'routeLocale' => 'en' ,
+    'routeLocale' => 'en',
 
     /*
     |--------------------------------------------------------------------------
@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost/public/en'),
+    'url' => env('APP_URL', 'http://localhost/public'),
 
     'asset_url' => env('ASSET_URL', null),
 

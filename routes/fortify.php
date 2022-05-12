@@ -34,8 +34,10 @@ function findLocale()
     }
 }
 config(['fortify.prefix' => findLocale()]);
+// dd(config('fortify.middleware', ['web']));
+// Route::group(['prefix' => '{locale?}', 'where' => ['locale' => '[a-zA-Z]{2}'], 'middleware' => [config('fortify.middleware', ['web']), 'locale']], function () {
+Route::group(['prefix' => '{locale?}', 'where' => ['locale' => '[a-zA-Z]{2}'], 'middleware' => ['locale']], function () {
 
-Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-zA-Z]{2}'],'middleware' => config('fortify.middleware', ['web'])], function () {
     $enableViews = config('fortify.views', true);
 
     // Authentication...

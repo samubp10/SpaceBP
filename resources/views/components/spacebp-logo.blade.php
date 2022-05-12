@@ -1,7 +1,7 @@
 <div class="header-logo">
     <svg id="logo" viewBox="0 0 180 160">
 
-        <a xlink:href="{{ Request::root() }}">
+        <a xlink:href="{{ $url }}">
 
             <g inkscape:label="Capa 1" inkscape:groupmode="layer" id="layer1"
                 transform="translate(-38.548031,-48.057179)">

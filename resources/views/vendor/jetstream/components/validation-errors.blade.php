@@ -1,5 +1,5 @@
 @if ($errors->any())
-    <div {{ $attributes }}>
+    <div class="errors" {{ $attributes }}>
         <div>{{ __('Whoops! Something went wrong.') }}</div>
 
         <ul>

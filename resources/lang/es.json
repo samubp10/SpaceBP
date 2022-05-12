@@ -206,7 +206,7 @@
     "Email": "Correo electrónico",
     "Email Address": "Correo electrónico",
     "Email Addresses": "Correos electrónicos",
-    "Email Password Reset Link": "Enviar enlace para restablecer contraseña",
+    "Email Password Reset Link": "Enviar correo",
     "Enable": "Habilitar",
     "Ensure your account is using a long, random password to stay secure.": "Asegúrese que su cuenta esté usando una contraseña larga y aleatoria para mantenerse seguro.",
     "Equatorial Guinea": "Guinea Ecuatorial",
@@ -745,7 +745,7 @@
     "Åland Islands": "Islas Åland",
     "TRAVEL TO OUTER SPACE WITH SPACEBP": "VIAJA AL ESPACIO EXTERIOR CON SPACEBP",
     "SpaceBP is a web page where you can learn, share knowledge, know about the latest news, and many other things about the space.": "SpaceBP es una página web en la que puedes aprender, compartir conocimiento, conocer las últimas noticias, y muchas otras cosas sobre el espacio que nos rodea.",
-    "Explore": "Explora"
-
-
+    "Explore": "Explora",
+    "News saved": "Noticias guardadas",
+    "Pictures saved": "Imágenes guardadas"
 }

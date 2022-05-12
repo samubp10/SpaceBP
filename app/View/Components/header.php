@@ -4,18 +4,16 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class spacebpLogo extends Component
+class header extends Component
 {
-    public $url;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($url)
+    public function __construct()
     {
         //
-        $this->url = $url;
     }
 
     /**
@@ -25,6 +23,6 @@ class spacebpLogo extends Component
      */
     public function render()
     {
-        return view('components.spacebp-logo');
+        return view('components.header');
     }
 }

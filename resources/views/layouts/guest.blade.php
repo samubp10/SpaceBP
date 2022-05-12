@@ -16,7 +16,8 @@
         <div class="wrapper-content">
 
             <header class="header">
-                <x-spacebp-logo/>
+                <x-spacebpLogo url="{{ Request::root() }}"/>
+
                 <x-switchLang />
             </header>
 
