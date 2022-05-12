@@ -161,9 +161,10 @@ usuarios se han guardado/le han dado favoritos.
 </ul>
 
 <h3>Semana 2</h3>
-
 <ul>
-
+    <li>Arreglo de errores</li>    
+    <li>Página principal</li>
+    <li>Registro</li>
 </ul>
 
 <h3>Semana 3</h3>
