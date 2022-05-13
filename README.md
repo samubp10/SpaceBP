@@ -167,7 +167,7 @@ usuarios se han guardado/le han dado favoritos.
 <ul>
     <li>Arreglo de errores</li>    
     <li>Página principal</li>
-    <li>Registro</li>
+    <li>Perfil</li>
 </ul>
 
 <h3>Semana 3</h3>
