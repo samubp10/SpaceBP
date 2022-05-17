@@ -478,4 +478,38 @@ body {
 .wrapper .wrapper-content .content > div[class^="P-"] h1 {
   text-align: center;
 }
+
+.wrapper .wrapper-content .content > div[class^="P-"] button {
+  color: white;
+  text-decoration: none;
+  border: 3px white solid;
+  padding: 7px 13px 13px 13px;
+  border-radius: 20px;
+  text-shadow: 0 0 7px #fff;
+  font-size: 25px;
+  background-color: #000000;
+  font-size: 13px;
+  padding: 10px;
+  margin-top: 1%;
+  margin-bottom: 10px;
+}
+
+.wrapper .wrapper-content .content > div[class^="P-"] button:hover {
+  -webkit-box-shadow: 3px -3px 30px white, -3px 3px 30px white;
+          box-shadow: 3px -3px 30px white, -3px 3px 30px white;
+}
+
+.wrapper .wrapper-content .content > div[class^="P-"] #selectPhoto {
+  display: none;
+}
+
+.wrapper .wrapper-content .content > div[class^="P-"] #selectedPhoto {
+  height: 100%;
+  width: 30%;
+}
+
+.wrapper .wrapper-content .content > div[class^="P-"] #photoPreview {
+  height: 100%;
+  width: 30%;
+}
 /*# sourceMappingURL=outerSpace.css.map */

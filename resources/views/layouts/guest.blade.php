@@ -7,7 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link href={{ asset('css/auth.css') }} rel="stylesheet">
     <title>{{ config('app.name', 'Laravel') }}</title>
-    <script src="{{ mix('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 
 <body>

@@ -133,7 +133,25 @@ body {
                 h1 {
                     text-align: center;
                 }
-                button {}
+                button {
+                    @include neonButton();
+                    background-color: #000000;
+                    font-size: 13px;
+                    padding: 10px;
+                    margin-top: 1%;
+                    margin-bottom: 10px;
+                }
+                #selectPhoto {
+                    display: none;
+                }
+                #selectedPhoto {
+                    height: 100%;
+                    width: 30%;
+                }
+                #photoPreview {
+                    height: 100%;
+                    width: 30%;
+                }
             }
         }
     }

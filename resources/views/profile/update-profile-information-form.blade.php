@@ -12,26 +12,30 @@
         @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
             <div x-data="{ photoName: null, photoPreview: null }" class="col-span-6 sm:col-span-4">
                 <!-- Profile Photo File Input -->
-                <input type="file" class="hidden" wire:model="photo" x-ref="photo" x-on:change="
+                <input type="file" id="selectPhoto" wire:model="photo" x-ref="photo" x-on:change="
+                
                                     photoName = $refs.photo.files[0].name;
                                     const reader = new FileReader();
                                     reader.onload = (e) => {
                                         photoPreview = e.target.result;
+                                        
                                     };
                                     reader.readAsDataURL($refs.photo.files[0]);
+                                   
                             " />
 
                 <x-jet-label for="photo" value="{{ __('Photo') }}" />
 
                 <!-- Current Profile Photo -->
                 <div x-show="! photoPreview">
-                    <img src="{{ $this->user->profile_photo_url }}" alt="{{ $this->user->name }}">
+                    <img id="selectedPhoto" src="{{ $this->user->profile_photo_url }}" alt="{{ $this->user->name }}">
                 </div>
 
                 <!-- New Profile Photo Preview -->
                 <div class="mt-2" x-show="photoPreview">
-                    <span x-bind:style="'background-image: url(\'' + photoPreview + '\');'">
-                    </span>
+                    {{-- <span x-bind:style="'background-image: url(\'' + photoPreview + '\');'">
+                    </span> --}}
+                    <img id="photoPreview"  x-bind:src="photoPreview">
                 </div>
 
                 <button class="mt-2 mr-2" type="button" x-on:click.prevent="$refs.photo.click()">

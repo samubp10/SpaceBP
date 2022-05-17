@@ -24,8 +24,10 @@ Route::group(['prefix' => '{locale?}', 'where' => ['locale' => '[a-zA-Z]{2}'],'m
             ? config('jetstream.auth_session')
             : null;
 
+            
+
     //Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-zA-Z]{2}'],'middleware' => array_values(array_filter([$authMiddleware, $authSessionMiddleware, 'verified']))], function () {
-    Route::group(['middleware' => array_values(array_filter([$authMiddleware, $authSessionMiddleware, 'verified']))], function () {
+    Route::group(['middleware' => array_values(array_filter(['locale',$authMiddleware, $authSessionMiddleware, 'verified']))], function () {
 
         
         // User & Profile...

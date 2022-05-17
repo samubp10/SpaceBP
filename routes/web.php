@@ -22,28 +22,22 @@ Route::get('/', function () {
         return redirect('/en/');
     }
 });
-// Route::get('es/login', function () {
-//     if (Auth::check()) {
-//         return redirect('/es/outerSpace');
-//     } else {
-//         return redirect('/es/login');
-//     }
-// });
-// Route::get('es/register', function () {
-//     if (Auth::check()) {
-//         return redirect('/es/outerSpace');
-//     } else {
-//         return redirect('/es/login');
-//     }
-// });
 
 Route::get('/dashboard', function () {
     return redirect(config('app.routeLocale') . '/outerSpace');
 });
-// Route::get(config('app.routeLocale') . '/dashboard', function () {
-//     return redirect(config('app.routeLocale') . '/outerSpace');
-// });
 
+Route::get('/two-factor-challenge', function () {
+    return redirect(config('app.routeLocale') . '/two-factor-challenge');
+});
+
+Route::get('/profile', function () {
+    return redirect(config('app.routeLocale') . '/profile');
+});
+
+Route::get('/login', function () {
+    return redirect(config('app.routeLocale') . '/login');
+});
 
 Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-zA-Z]{2}'], 'middleware' => ['locale']], function () {
     Route::get('/', function () {
