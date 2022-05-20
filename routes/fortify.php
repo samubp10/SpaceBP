@@ -104,6 +104,10 @@ Route::group(['prefix' => '{locale?}', 'where' => ['locale' => '[a-zA-Z]{2}'], '
         Route::post('/reset-password', [NewPasswordController::class, 'store'])
             ->middleware(['guest:' . config('fortify.guard')])
             ->name('password.update');
+
+        Route::get('/reset-password', [NewPasswordController::class, 'store'])
+            ->middleware(['guest:' . config('fortify.guard')])
+            ->name('password.update');
     }
 
     // Registration...

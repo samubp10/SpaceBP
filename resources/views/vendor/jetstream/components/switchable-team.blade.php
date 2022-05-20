@@ -1,6 +1,6 @@
 @props(['team', 'component' => 'jet-dropdown-link'])
 
-<form method="POST" action="{{ route('current-team.update') }}" x-data>
+<form method="POST" action="{{ route('current-team.update', app()->getLocale()) }}" x-data>
     @method('PUT')
     @csrf
 

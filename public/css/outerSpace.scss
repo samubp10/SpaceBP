@@ -57,101 +57,131 @@ body {
             height: 200px;
             width: 99vw;
             display: grid;
-            grid-template-columns: 0.1fr 1fr 2fr 0.1fr 0.3fr 0.1fr;
+            grid-template-columns: 0.1fr 0.3fr 0.1fr 2fr 0.1fr 0.3fr 0.1fr;
             margin-bottom: 40px;
-            .language-switch {
-                grid-column: 4 / 4;
-                grid-row: 1;
-                display: flex;
-                align-items: center;
-            }
-            .header-logo {
-                grid-column: 2 / 2;
-                grid-row: 1;
-            }
-            .wrapper-profile {
-                grid-column: 5 / 5;
-                grid-row: 1;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-                height: 80%;
+            //nav-bar
+            .nav-bar {
                 color: white;
-                .dropdown {
-                    width: 70px;
-                    height: 70px;
-                    #profile {
-                        width: 70px;
-                        height: 70px;
-                        border-radius: 30px;
-                    }
-                    .dropdown-content {
-                        display: none;
-                        position: absolute;
-                        background-color: white;
-                        right: 45px;
-                        width: 10%;
-                        overflow: hidden;
-                        border-radius: 20px;
-                        box-shadow: 3px -3px 30px white, -3px 3px 30px white;
-                        text-align: center;
-                    }
-                    &:hover .dropdown-content {
-                        display: block;
-                    }
-                    .dropdown-content a {
-                        display: block;
-                        color: #000000;
-                        padding: 5px;
-                        text-decoration: none;
-                    }
-                    .dropdown-content a:hover {
-                        color: #ffffff;
-                        background-color: #000000;
-                    }
+                grid-column: 4 / 4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                font-weight: 700;
+                gap: 50px;
+                text-transform: uppercase;
+                font-size: 25px;
+                color: white;
+                text-shadow: 0 2px 10px white;
+                // a:hover {
+                //     text-shadow: 0 0 7px #fff, 0 0 10px #fff;
+                // }
+                &>a[class^="nav-"] {
+                    color: white;
                 }
             }
         }
-        .content {
-            grid-column: 1 / span 12;
-            grid-row: 2;
+        // Language-switch menu
+        .language-switch {
+            grid-column: 5 / 5;
+            grid-row: 1;
             display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
             align-items: center;
-            align-content: stretch;
-            gap: 50px;
-            color: black;
-            &>div[class^="P-"] {
-                background-color: white;
-                width: 50%;
-                border-radius: 20px;
-                padding: 30px;
-                line-height: 2;
-                box-shadow: 3px -3px 30px white, -3px 3px 30px white;
-                text-align: center;
-                h1 {
+        }
+        //Logo of the web page
+        .header-logo {
+            grid-column: 2 / 2;
+            grid-row: 1;
+        }
+        //profile's menu
+        .wrapper-profile {
+            grid-column: 6 / 6;
+            grid-row: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 80%;
+            color: white;
+            .dropdown {
+                width: 70px;
+                height: 70px;
+                #profile {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 30px;
+                }
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: white;
+                    right: 45px;
+                    width: 10%;
+                    overflow: hidden;
+                    border-radius: 20px;
+                    box-shadow: 3px -3px 30px white, -3px 3px 30px white;
                     text-align: center;
                 }
-                button {
-                    @include neonButton();
+                &:hover .dropdown-content {
+                    display: block;
+                }
+                .dropdown-content a {
+                    display: block;
+                    color: #000000;
+                    padding: 5px;
+                    text-decoration: none;
+                }
+                .dropdown-content a:hover {
+                    color: #ffffff;
                     background-color: #000000;
-                    font-size: 13px;
-                    padding: 10px;
-                    margin-top: 1%;
-                    margin-bottom: 10px;
                 }
-                #selectPhoto {
-                    display: none;
-                }
-                #selectedPhoto {
-                    height: 100%;
-                    width: 30%;
-                }
-                #photoPreview {
-                    height: 100%;
-                    width: 30%;
-                }
+            }
+        }
+    }
+    // Content of the page
+    .content {
+        grid-column: 1 / span 12;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: stretch;
+        gap: 50px;
+        color: black;
+        // User's profile
+        &>div[class^="P-"] {
+            background-color: white;
+            width: 50%;
+            border-radius: 20px;
+            padding: 30px;
+            line-height: 2;
+            box-shadow: 3px -3px 30px white, -3px 3px 30px white;
+            text-align: center;
+            h1 {
+                text-align: center;
+            }
+            button {
+                @include neonButton();
+                background-color: #000000;
+                font-size: 13px;
+                padding: 10px;
+                margin-top: 1%;
+                margin-bottom: 10px;
+            }
+            #selectPhoto {
+                display: none;
+            }
+            #selectedPhoto {
+                height: 100%;
+                width: 30%;
+            }
+            #photoPreview {
+                height: 100%;
+                width: 30%;
+            }
+            #email {
+                width: 30%;
+                min-width: 200px;
             }
         }
     }

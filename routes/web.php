@@ -30,6 +30,10 @@ Route::get('/dashboard', function () {
 Route::get('/two-factor-challenge', function () {
     return redirect(config('app.routeLocale') . '/two-factor-challenge');
 });
+Route::get('/email/verify', function () {
+    return redirect(config('app.routeLocale') . '/email/verify');
+});
+
 
 Route::get('/profile', function () {
     return redirect(config('app.routeLocale') . '/profile');

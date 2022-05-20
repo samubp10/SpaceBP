@@ -28,27 +28,28 @@
 
                 <!-- Current Profile Photo -->
                 <div x-show="! photoPreview">
-                    <img id="selectedPhoto" src="{{ $this->user->profile_photo_url }}" alt="{{ $this->user->name }}">
+                    <img id="selectedPhoto" src="{{ $this->user->profile_photo_url }}"
+                        alt="{{ $this->user->name }}">
                 </div>
 
                 <!-- New Profile Photo Preview -->
-                <div class="mt-2" x-show="photoPreview">
+                <div x-show="photoPreview">
                     {{-- <span x-bind:style="'background-image: url(\'' + photoPreview + '\');'">
                     </span> --}}
-                    <img id="photoPreview"  x-bind:src="photoPreview">
+                    <img id="photoPreview" x-bind:src="photoPreview">
                 </div>
 
-                <button class="mt-2 mr-2" type="button" x-on:click.prevent="$refs.photo.click()">
+                <button type="button" x-on:click.prevent="$refs.photo.click()">
                     {{ __('Select A New Photo') }}
                 </button>
 
                 @if ($this->user->profile_photo_path)
-                    <x-jet-secondary-button type="button" class="mt-2" wire:click="deleteProfilePhoto">
+                    <x-jet-secondary-button type="button" wire:click="deleteProfilePhoto">
                         {{ __('Remove Photo') }}
                     </x-jet-secondary-button>
                 @endif
 
-                <x-jet-input-error for="photo" class="mt-2" />
+                <x-jet-input-error for="photo" />
             </div>
         @endif
 
@@ -63,7 +64,7 @@
         <div class="col-span-6 sm:col-span-4">
             <x-jet-label for="email" value="{{ __('Email') }}" />
             <x-jet-input id="email" type="email" class="mt-1 block w-full" wire:model.defer="state.email" />
-            <x-jet-input-error for="email" class="mt-2" />
+            <x-jet-input-error for="email" />
         </div>
     </x-slot>
 

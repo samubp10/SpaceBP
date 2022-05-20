@@ -9,6 +9,7 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
+use App\Notifications\ResetPasswordNotification;
 
 class User extends Authenticatable
 {
@@ -58,29 +59,49 @@ class User extends Authenticatable
      *
      * @var array
      */
-   
+
 
     protected $appends = [
         'profile_photo_url',
     ];
 
-    public function posts() {
 
-        return $this->hasMany('App\Models\Post','idPost','idPost');
+    public function posts()
+    {
+
+        return $this->hasMany('App\Models\Post', 'idPost', 'idPost');
     }
 
-    public function role() {
+    public function role()
+    {
 
-        return $this->belongsTo('App\Models\Role','idRole','idRole');
+        return $this->belongsTo('App\Models\Role', 'idRole', 'idRole');
     }
 
-    public function savedPictures() {
+    public function savedPictures()
+    {
 
-        return $this->belongsToMany('App\Models\Picture','userpicture','idUser', 'idPicture');
+        return $this->belongsToMany('App\Models\Picture', 'userpicture', 'idUser', 'idPicture');
     }
 
-    public function savedNews() {
+    public function savedNews()
+    {
 
-        return $this->belongsToMany('App\Models\News','usernews','idUser', 'idNews');
+        return $this->belongsToMany('App\Models\News', 'usernews', 'idUser', 'idNews');
+    }
+
+    /**
+     * Send a password reset email to the user
+     */
+    // public function sendPasswordResetNotification($token)
+    // {
+    //     $this->notify(new MailResetPasswordToken($token));
+    // }
+
+    public function sendPasswordResetNotification($token)
+    {
+        $url =  "/". $token . '?email='.$this->email;
+
+        $this->notify(new ResetPasswordNotification($url));
     }
 }

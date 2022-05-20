@@ -2,10 +2,11 @@
 
     <x-spacebpLogo url="{{ Request::root() }}/{{ app()->getLocale() }}/outerSpace" />
 
+    <x-nav-bar/>
+
     <x-switchLang />
     {{-- @livewire('navigation-menu') --}}
     @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
-    
         <div class="wrapper-profile">
 
             <div class="dropdown">
