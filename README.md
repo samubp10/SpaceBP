@@ -171,9 +171,10 @@ usuarios se han guardado/le han dado favoritos.
 </ul>
 
 <h3>Semana 3</h3>
-
 <ul>
-    
+    <li>Arreglo de errores</li>    
+    <li>Perfil de usuario terminado</li>
+    <li>Elección de APIs y de herramientas para realizar las páginas principales de la página web</li>
 </ul>
 
 
