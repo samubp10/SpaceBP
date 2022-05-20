@@ -190,7 +190,6 @@ profesores:
         <ul>
             <li>Html</li>
             <li>CSS3</li>
-            <li>Ajax</li>
             <li>JQuery</li>
             <li>A-frame</li>
             <li>También me estoy planteando utilizar Livewire, pero aún me tengo de documentar sobre esta tecnología</li>
