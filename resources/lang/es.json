@@ -553,7 +553,7 @@
     "South Georgia And Sandwich Isl.": "Islas Georgias del Sur y Sandwich del Sur",
     "South Georgia and the South Sandwich Islands": "Georgia del sur y las islas Sandwich del sur",
     "South Sudan": "Sudán del Sur",
-    "Solar system": "Sistema solar",
+    "Solar System": "Sistema solar",
     "Spain": "España",
     "Sri Lanka": "Sri Lanka",
     "Standalone Actions": "Acciones independientes",
@@ -716,6 +716,7 @@
     "We will send a receipt download link to the email addresses that you specify below. You may separate multiple email addresses using commas.": "Enviaremos un enlace de descarga de recibo a las direcciones de correo electrónico que especifique a continuación. Puede separar varias direcciones de correo electrónico con comas.",
     "We're lost in space. The page you were trying to view does not exist.": "Estamos perdidos en el espacio. La página que intenta buscar no existe.",
     "Welcome Back!": "¡Bienvenido de nuevo!",
+    "Welcome to SPACEBP!": "¡Bienvenido a SPACEBP!",
     "Western Sahara": "Sahara Occidental",
     "When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone's Google Authenticator application.": "Cuando la autenticación de dos factores esté habilitada, le pediremos un token aleatorio seguro durante la autenticación. Puede recuperar este token desde la aplicación Google Authenticator de su teléfono.",
     "Whoops": "Ups",
@@ -752,5 +753,9 @@
     "SpaceBP is a web page where you can learn, share knowledge, know about the latest news, and many other things about the space.": "SpaceBP es una página web en la que puedes aprender, compartir conocimiento, conocer las últimas noticias, y muchas otras cosas sobre el espacio que nos rodea.",
     "Explore": "Explora",
     "News saved": "Noticias guardadas",
-    "Pictures saved": "Imágenes guardadas"
+    "Pictures saved": "Imágenes guardadas",
+    "Sometimes we do not know so well the part of the universe that is closer to us, in this section you can learn about the planets of our solar system as well as details about them.": "A veces no conocemos tan bien la parte del universo que está más cercana a nosotros, en esta sección podrás conocer los planetas de nuestro sistema solar así como detalles sobre ellos.",
+    "In the gallery you will be amazed by the almost infinite number of images ranging from a few kilometers to thousands of light years away.": "En la galería le sorprenderá el número casi infinito de imágenes que van desde unos pocos kilómetros hasta miles de años luz.",
+    "In the news section you will be able to learn about the most important current news related to the world of Astrology.": "En la sección de noticias podrá conocer las novedades más importantes de la actualidad de la astrología.",
+    "Do you want to share an idea with the world? Do you have knowledge that you think the world needs to know? In this section you will be able to write a post related to the world of science.": "¿Quieres compartir una idea con el mundo?, ¿Tienes conocimiento que crees que el mundo tiene que saber?, En esta sección podrás escribir una publicación relacionada con el mundo de la ciencia."
 }

@@ -23,18 +23,15 @@ use Laravel\Fortify\Http\Controllers\VerifyEmailController;
 function findLocale()
 {
     $prePath = "";
-    //dd(url()->previous());
     $prePath = url()->previous();
     $prePath = explode("/", $prePath);
     $prePath = $prePath[5] ?? "en";
 
-    //dd($prePath);
     if ($prePath) {
         return $prePath ?? 'en';
     }
 }
 config(['fortify.prefix' => findLocale()]);
-// dd(config('fortify.middleware', ['web']));
 // Route::group(['prefix' => '{locale?}', 'where' => ['locale' => '[a-zA-Z]{2}'], 'middleware' => [config('fortify.middleware', ['web']), 'locale']], function () {
 Route::group(['prefix' => '{locale?}', 'where' => ['locale' => '[a-zA-Z]{2}'], 'middleware' => ['locale']], function () {
 

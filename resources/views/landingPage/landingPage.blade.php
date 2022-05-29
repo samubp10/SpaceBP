@@ -33,7 +33,7 @@
                     </p>
                 </div>
                 <div class="content-explore">
-                    <a href="#" id="explore">{{ __('Explore') }}</a>
+                    <a href="{{route('outerspace', app()->getLocale())}}" id="explore">{{ __('Explore') }}</a>
                 </div>
             </section>
         </div>

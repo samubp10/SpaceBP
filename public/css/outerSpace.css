@@ -14,12 +14,12 @@
           flex-direction: column;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 22px;
   color: white;
   text-shadow: 0 2px 10px white;
   width: 100%;
   height: 75px;
-  margin-top: 60%;
+  margin-top: 75%;
 }
 
 .language-switch a.selected {
@@ -163,12 +163,12 @@ body {
           flex-direction: column;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 22px;
   color: white;
   text-shadow: 0 2px 10px white;
   width: 100%;
   height: 75px;
-  margin-top: 60%;
+  margin-top: 75%;
 }
 
 .language-switch a.selected {
@@ -336,6 +336,7 @@ body {
 
 .wrapper {
   height: 100%;
+  width: 100%;
 }
 
 .wrapper .wrapper-content {
@@ -354,7 +355,7 @@ body {
   -ms-grid-row: 1;
   grid-row: 1;
   height: 200px;
-  width: 99vw;
+  width: 98.5vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 0.1fr 0.3fr 0.1fr 2fr 0.1fr 0.3fr 0.1fr;
@@ -384,7 +385,7 @@ body {
   text-transform: uppercase;
   font-size: 25px;
   color: white;
-  text-shadow: 0 2px 10px white;
+  text-shadow: 0 0 7px white;
 }
 
 .wrapper .wrapper-content .header .nav-bar > a[class^="nav-"] {
@@ -469,6 +470,61 @@ body {
   background-color: #000000;
 }
 
+.wrapper .wrapper-content .sign-buttons {
+  text-shadow: 0 0 7px #fff;
+  -ms-grid-column: 6;
+  grid-column: 6 / 6;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'fuente2';
+  font-size: 10px;
+  margin-left: 32px;
+}
+
+.wrapper .wrapper-content .sign-buttons #sign-up {
+  margin-right: 30px;
+  color: white;
+  text-decoration: none;
+  border: 3px white solid;
+  padding: 7px 13px 13px 13px;
+  border-radius: 20px;
+  text-shadow: 0 0 7px #fff;
+  font-size: 21px;
+}
+
+.wrapper .wrapper-content .sign-buttons #sign-up:hover {
+  -webkit-box-shadow: 3px -3px 30px white, -3px 3px 30px white;
+          box-shadow: 3px -3px 30px white, -3px 3px 30px white;
+}
+
+.wrapper .wrapper-content .sign-buttons #sign-in {
+  color: white;
+  text-decoration: none;
+  border: 3px white solid;
+  padding: 7px 13px 13px 13px;
+  border-radius: 20px;
+  text-shadow: 0 0 7px #fff;
+  font-size: 21px;
+}
+
+.wrapper .wrapper-content .sign-buttons #sign-in:hover {
+  -webkit-box-shadow: 3px -3px 30px white, -3px 3px 30px white;
+          box-shadow: 3px -3px 30px white, -3px 3px 30px white;
+}
+
 .wrapper .content {
   -ms-grid-column: 1;
   -ms-grid-column-span: 12;
@@ -515,7 +571,7 @@ body {
   padding: 7px 13px 13px 13px;
   border-radius: 20px;
   text-shadow: 0 0 7px #fff;
-  font-size: 25px;
+  font-size: 21px;
   background-color: #000000;
   font-size: 13px;
   padding: 10px;
@@ -545,5 +601,664 @@ body {
 .wrapper .content > div[class^="P-"] #email {
   width: 30%;
   min-width: 200px;
+}
+
+.wrapper .content .news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+  width: 99%;
+  text-align: center;
+}
+
+.wrapper .content .news article {
+  width: 30%;
+  border-radius: 20px;
+  min-width: 300px;
+  padding: 30px;
+}
+
+.wrapper .content .news article #link {
+  margin-top: 10px;
+}
+
+.wrapper .content .news a {
+  color: black;
+  background-color: white;
+  padding: 5px;
+  border-radius: 20px;
+  width: 20%;
+  font-size: 15px;
+  height: 10%;
+  margin-top: 20px;
+}
+
+.wrapper .content .news .card {
+  height: 40%;
+  border-radius: 15px;
+  padding: 1.5rem;
+  background: black;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  -webkit-box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper .content .news .card:hover {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.wrapper .content .news .card:hover:before {
+  opacity: 1;
+}
+
+.wrapper .content .news .card:hover .info {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.wrapper .content .news .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.wrapper .content .news .card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+}
+
+.wrapper .content .news .card .info {
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.wrapper .content .news .card .info h1 {
+  margin: 3px;
+}
+
+.wrapper .content .news .card .info p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.wrapper .content .like {
+  width: 60px;
+  height: 60px;
+}
+
+.wrapper .content .like svg {
+  cursor: pointer;
+  overflow: visible;
+  width: 60px;
+}
+
+.wrapper .content .like svg #heart {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: animateHeartOut 0.3s linear forwards;
+          animation: animateHeartOut 0.3s linear forwards;
+}
+
+.wrapper .content .like svg #main-circ {
+  -webkit-transform-origin: 29.5px 29.5px;
+          transform-origin: 29.5px 29.5px;
+}
+
+.wrapper .content .like > input[id^="cora"] {
+  display: none;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #heart {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  fill: #e2264d;
+  -webkit-animation: animateHeart 0.3s linear forwards 0.25s;
+          animation: animateHeart 0.3s linear forwards 0.25s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #main-circ {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  -webkit-animation: animateCircle 0.3s linear forwards;
+          animation: animateCircle 0.3s linear forwards;
+  opacity: 1;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp1 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp1 #oval1 {
+  -webkit-transform: scale(0) translate(0, -30px);
+          transform: scale(0) translate(0, -30px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp1 #oval2 {
+  -webkit-transform: scale(0) translate(10px, -50px);
+          transform: scale(0) translate(10px, -50px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp2 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp2 #oval1 {
+  -webkit-transform: scale(0) translate(30px, -15px);
+          transform: scale(0) translate(30px, -15px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp2 #oval2 {
+  -webkit-transform: scale(0) translate(60px, -15px);
+          transform: scale(0) translate(60px, -15px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp3 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp3 #oval1 {
+  -webkit-transform: scale(0) translate(30px, 0px);
+          transform: scale(0) translate(30px, 0px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp3 #oval2 {
+  -webkit-transform: scale(0) translate(60px, 10px);
+          transform: scale(0) translate(60px, 10px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp4 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp4 #oval1 {
+  -webkit-transform: scale(0) translate(30px, 15px);
+          transform: scale(0) translate(30px, 15px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp4 #oval2 {
+  -webkit-transform: scale(0) translate(40px, 50px);
+          transform: scale(0) translate(40px, 50px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp5 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp5 #oval1 {
+  -webkit-transform: scale(0) translate(-10px, 20px);
+          transform: scale(0) translate(-10px, 20px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp5 #oval2 {
+  -webkit-transform: scale(0) translate(-60px, 30px);
+          transform: scale(0) translate(-60px, 30px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp6 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp6 #oval1 {
+  -webkit-transform: scale(0) translate(-30px, 0px);
+          transform: scale(0) translate(-30px, 0px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp6 #oval2 {
+  -webkit-transform: scale(0) translate(-60px, -5px);
+          transform: scale(0) translate(-60px, -5px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp7 {
+  opacity: 1;
+  -webkit-transition: 0.1s all 0.3s;
+  transition: 0.1s all 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp7 #oval1 {
+  -webkit-transform: scale(0) translate(-30px, -15px);
+          transform: scale(0) translate(-30px, -15px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s -webkit-transform 0.3s;
+  transition: 0.5s transform 0.3s;
+  transition: 0.5s transform 0.3s, 0.5s -webkit-transform 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp7 #oval2 {
+  -webkit-transform: scale(0) translate(-55px, -30px);
+          transform: scale(0) translate(-55px, -30px);
+  -webkit-transform-origin: 0 0 0;
+          transform-origin: 0 0 0;
+  -webkit-transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s -webkit-transform 0.3s;
+  transition: 1.5s transform 0.3s;
+  transition: 1.5s transform 0.3s, 1.5s -webkit-transform 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp2 {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity 0.3s;
+  transition: 0.1s opacity 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp3 {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity 0.3s;
+  transition: 0.1s opacity 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp4 {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity 0.3s;
+  transition: 0.1s opacity 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp5 {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity 0.3s;
+  transition: 0.1s opacity 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp6 {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity 0.3s;
+  transition: 0.1s opacity 0.3s;
+}
+
+.wrapper .content .like > input[id^="cora"]:checked + label svg #grp7 {
+  opacity: 1;
+  -webkit-transition: 0.1s opacity 0.3s;
+  transition: 0.1s opacity 0.3s;
+}
+
+@-webkit-keyframes animateCircle {
+  40% {
+    -webkit-transform: scale(10);
+            transform: scale(10);
+    opacity: 1;
+    fill: #dd4688;
+  }
+  55% {
+    -webkit-transform: scale(11);
+            transform: scale(11);
+    opacity: 1;
+    fill: #d46abf;
+  }
+  65% {
+    -webkit-transform: scale(12);
+            transform: scale(12);
+    opacity: 1;
+    fill: #cc8ef5;
+  }
+  75% {
+    -webkit-transform: scale(13);
+            transform: scale(13);
+    opacity: 1;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0.5;
+  }
+  85% {
+    -webkit-transform: scale(17);
+            transform: scale(17);
+    opacity: 1;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0.2;
+  }
+  95% {
+    -webkit-transform: scale(18);
+            transform: scale(18);
+    opacity: 1;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0.1;
+  }
+  100% {
+    -webkit-transform: scale(19);
+            transform: scale(19);
+    opacity: 1;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0;
+  }
+}
+
+@keyframes animateCircle {
+  40% {
+    -webkit-transform: scale(10);
+            transform: scale(10);
+    opacity: 1;
+    fill: #dd4688;
+  }
+  55% {
+    -webkit-transform: scale(11);
+            transform: scale(11);
+    opacity: 1;
+    fill: #d46abf;
+  }
+  65% {
+    -webkit-transform: scale(12);
+            transform: scale(12);
+    opacity: 1;
+    fill: #cc8ef5;
+  }
+  75% {
+    -webkit-transform: scale(13);
+            transform: scale(13);
+    opacity: 1;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0.5;
+  }
+  85% {
+    -webkit-transform: scale(17);
+            transform: scale(17);
+    opacity: 1;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0.2;
+  }
+  95% {
+    -webkit-transform: scale(18);
+            transform: scale(18);
+    opacity: 1;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0.1;
+  }
+  100% {
+    -webkit-transform: scale(19);
+            transform: scale(19);
+    opacity: 1;
+    fill: transparent;
+    stroke: #cc8ef5;
+    stroke-width: 0;
+  }
+}
+
+@-webkit-keyframes animateHeart {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  40% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes animateHeart {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  40% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes animateHeartOut {
+  0% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes animateHeartOut {
+  0% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.wrapper .welcome {
+  color: white;
+  width: 100%;
+  row-gap: 70px;
+  -webkit-column-gap: 70px;
+          column-gap: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 22%;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+@media (min-width: 480px) {
+  .wrapper .welcome article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrapper .welcome {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
+        grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 0.1fr;
+    -ms-grid-rows: 0.4fr 1.6fr;
+        grid-template-rows: 0.4fr 1.6fr;
+  }
+  .wrapper .welcome > article[id^="wel-"] {
+    display: block;
+  }
+}
+
+.wrapper .welcome #wel-title {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+  font-size: 50px;
+  text-align: center;
+}
+
+.wrapper .welcome > article[id^="wel-"] {
+  -ms-grid-row: 2;
+  grid-row: 2/2;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  -webkit-box-shadow: 3px -3px 30px white, -3px 3px 30px white;
+          box-shadow: 3px -3px 30px white, -3px 3px 30px white;
+  border-radius: 20px;
+  padding: 15px;
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.wrapper .welcome > article[id^="wel-"] h2 {
+  font-size: 35px;
+  padding-bottom: 50px;
+}
+
+.wrapper .welcome > article[id^="wel-"] svg {
+  height: 60%;
+  width: 60%;
+  margin-bottom: 50px;
+}
+
+.wrapper .welcome > article[id^="wel-"] p {
+  padding-bottom: 40px;
+}
+
+.wrapper .welcome #wel-gallery {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.wrapper .welcome #wel-news {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 3;
+}
+
+.wrapper .welcome #wel-solarSys {
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 4;
+}
+
+.wrapper .welcome #wel-posts {
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 5;
 }
 /*# sourceMappingURL=outerSpace.css.map */
