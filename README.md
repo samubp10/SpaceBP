@@ -177,6 +177,14 @@ usuarios se han guardado/le han dado favoritos.
     <li>Elección de APIs y de herramientas para realizar las páginas principales de la página web</li>
 </ul>
 
+<h3>Semana 4</h3>
+<ul>
+    <li>Arreglo de errores</li>    
+    <li>Empezado la vista de Galería</li>
+    <li>Empezado la vista de Noticias</li>
+    <li>Empezado con la funcionalidad del like</li>
+</ul>
+
 
 <h2>Tecnologías</h2>
 
