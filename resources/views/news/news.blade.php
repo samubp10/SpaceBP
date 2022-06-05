@@ -1,9 +1,9 @@
 <x-app-layout>
-    <div class="news">
+    <div class="articles">
        
         @foreach ($news as $report)
             <article class="card">
-                <img src="{{ $report->imageUrl }}" alt="an image about the news" target="_blank">
+                <img src="{{ $report->imageUrl }}" alt="an image about the news">
                 <div class="info">
 
                     

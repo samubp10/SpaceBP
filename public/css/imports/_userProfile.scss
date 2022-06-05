@@ -1,0 +1,49 @@
+// User's profile
+.content>div[class^="P-"] {
+    background-color: white;
+    @media (min-width: 992px) {
+        width: 50%;
+    }
+    width: 95%;
+    border-radius: 20px;
+    padding: 30px;
+    line-height: 2;
+    box-shadow: 3px -3px 30px white,
+    -3px 3px 30px white;
+    text-align: center;
+    h1 {
+        text-align: center;
+    }
+    button {
+        @include neonButton();
+        background-color: #000000;
+        font-size: 16px;
+        padding: 10px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    label {
+        @media (min-width: 992px) {
+            display: inline;
+        }
+        display: block;
+    }
+    #selectPhoto {
+        display: none;
+    }
+    #selectedPhoto {
+        @media (min-width: 992px) {
+            width: 30%;
+        }
+        height: 100%;
+        width: 80%;
+    }
+    #photoPreview {
+        height: 100%;
+        width: 30%;
+    }
+    #email {
+        width: 30%;
+        min-width: 200px;
+    }
+}

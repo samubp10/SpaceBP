@@ -110,7 +110,7 @@ Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-zA-Z]{2}'], 'm
 
         Route::get('/', [PictureController::class, 'show']);
 
-        // Route::get('ver/{idt}', [NotaController::class, 'index'])->name('ver');
+        Route::get('watch/{date}', [PictureController::class, 'watch'])->name('watch');
 
         // Route::get('editar/{nota}', [NotaController::class, 'editar'])->name('editar');
 

@@ -54,9 +54,10 @@ return [
     |
     */
 
-    //'asset_url' => null,
-    // dd(env('APP_URL', 'http://localhost')),
-    'asset_url' => env('APP_URL', 'http://localhost'),
+    // 'asset_url' => "",
+    'asset_url'  =>  env('APP_URL', 'http://localhost'),
+
+
     /*
     |--------------------------------------------------------------------------
     | Livewire App URL
@@ -69,7 +70,7 @@ return [
     |
     */
 
-    'app_url' => env('APP_URL', 'http://localhost'),
+    'app_url' => null,
 
     /*
     |--------------------------------------------------------------------------

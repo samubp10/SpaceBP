@@ -19,12 +19,12 @@
             <p>{{ __('Sometimes we do not know so well the part of the universe that is closer to us, in this section you can learn about the planets of our solar system as well as details about them.') }}
 
         </article>
-        <article id="wel-posts">
+        {{-- <article id="wel-posts">
             <h2>{{ __('Posts') }}</h2>
             <x-postsSVG />
             <p>{{ __('Do you want to share an idea with the world? Do you have knowledge that you think the world needs to know? In this section you will be able to write a post related to the world of science.') }}
 
-        </article>
+        </article> --}}
     </div>
 
 </x-app-layout>

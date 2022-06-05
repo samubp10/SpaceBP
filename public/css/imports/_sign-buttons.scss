@@ -1,0 +1,30 @@
+.sign-buttons {
+    text-shadow: 0 0 7px #fff;
+    @media (min-width: 992px) {
+        grid-column: 6 / 6;
+        grid-row: 1;
+        margin-left: 32px;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: 'fuente2';
+    font-size: 6px;
+    white-space: nowrap;
+    margin-left: auto;
+    #sign-up {
+        @media (min-width: 992px) {
+            margin-right: 30px;
+        }
+        @include neonButton();
+    }
+    #sign-in {
+        @include neonButton();
+    }
+}

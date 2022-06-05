@@ -1,22 +1,15 @@
 <x-app-layout>
-    <div class="news">
+    <div class="articles">
 
 
-        {{-- @dd($pictures[0]->links[0]->href) --}}
         @foreach ($pictures as $report)
-            {{-- @dump($report->links[0]) --}}
-            {{-- @dump($report) --}}
-
-            {{-- @dd( $report->links[0]->href) --}}
             <article class="card">
+                <img src="{{ $report->url }}" alt="{{ $report->title }}">
 
-                {{-- <p>{{$report}}</p> --}}
-                @if (property_exists($report, "links"))
-                    <img src="{{ $report->links[0]->href }}" alt="an image about the news">
-                @endif
-                {{-- <div class="info"> --}}
 
-                {{-- <div class="like">
+                <div class="info">
+
+                    <div class="like">
                         <input type="checkbox" class="cora" id="cora{{ ++$cont }}" />
                         <label for="cora{{ $cont }}">
                             <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
@@ -63,16 +56,15 @@
                                 </g>
                             </svg>
                         </label>
-                    </div> --}}
+                    </div>
+                    <a id="info-title" href="{{ route('gallery.watch',['locale' => app()->getLocale(), 'date' => $report->date] ) }}">{{ $report->title }}</a>
+                    <p id="info-expl">{{ $report->explanation }}</p>
+                    <p id="info-date">{{ $report->date }}</p>
 
-                {{-- <h1>{{ $report->title }}</h1>
-                    <p>{{ $report->summary }}</p>
-                    <p>{{ $report->publishedAt }}</p>
-                    <a href="{{ $report->url }}" target="blank" id="link">{{ __('Go to the article') }}</a> --}}
-
-                {{-- </div> --}}
+                </div>
 
             </article>
         @endforeach
+
     </div>
 </x-app-layout>

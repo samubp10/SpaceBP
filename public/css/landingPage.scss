@@ -1,4 +1,6 @@
 @import 'imports/all';
+@import 'imports/sign-buttons';
+@import 'imports/header';
 * {
     padding: 0;
     margin: 0;
@@ -25,38 +27,35 @@ body {
     width: 100vw;
 }
 
-.wrapper {
-    height: 100%;
-    .header {
+.header {
+    display: flex;
+    @media (min-width: 992px) {
         display: grid;
-        grid-template-columns: 0.1fr 1.5fr 0.1fr 1.5fr 0.1fr;
-        grid-auto-rows: minmax(100px, auto);
-        .header-logo {
-            grid-column: 2 / 2;
-            grid-row: 1;
-        }
-        .sign-buttons {
-            text-shadow: 0 0 7px #fff;
-            grid-column: 4 / 4;
-            grid-row: 1;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            align-items: center;
-            font-family: 'fuente2';
-            #sign-up {
-                margin-right: 30px;
-                @include neonButton();
-            }
-            #sign-in {
-                @include neonButton();
-            }
-        }
-        .language-switch {
-            grid-column: 3 / 3;
+        grid-template-columns: 1.5fr 0.1fr 1.5fr;
+    }
+    .header-logo {
+        margin-left: 10px;
+        @media (min-width: 992px) {
+            grid-column: 1 / 1;
             grid-row: 1;
         }
     }
+    .sign-buttons {
+        @media (min-width: 992px) {
+            grid-column: 3 / 3;
+        }
+        margin-right: 10px;
+    }
+    .language-switch {
+        @media (min-width: 992px) {
+            grid-column: 2 / 2;
+            grid-row: 1;
+        }
+    }
+}
+
+.wrapper {
+    height: 100%;
     .wrapper-content {
         background: rgba(0, 0, 0, 0.06);
         border-radius: 16px;
@@ -64,7 +63,10 @@ body {
         backdrop-filter: blur(3.5px);
         -webkit-backdrop-filter: blur(3.5px);
         position: absolute;
-        height: 100%;
+        height: 110%;
+        @media (min-width: 992px) {
+            height: 100%;
+        }
         width: 100%;
         #content {
             margin-top: 5%;
@@ -75,13 +77,18 @@ body {
             font-size: 50px;
             font-family: 'fuente2';
             text-shadow: 0 0 7px #fff, 0 0 10px #fff;
-            line-height: 3;
+            margin-bottom: 40px;
         }
         .content-description {
+            @media (min-width: 992px) {
+                font-size: 30px;
+                margin-left: 20%;
+                margin-right: 20%;
+            }
             font-size: 30px;
+            margin-left: 5px;
+            margin-right: 5px;
             font-family: 'fuente1';
-            margin-left: 20%;
-            margin-right: 20%;
             text-shadow: 0 0 7px #fff;
         }
         .content-explore {

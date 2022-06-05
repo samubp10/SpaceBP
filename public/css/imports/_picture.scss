@@ -1,0 +1,25 @@
+.picture {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    #picture-image {}
+    .picture-information {
+        background-color: white;
+        border-radius: 20px;
+        padding: 20px;
+        width: 50%;
+        text-align: center;
+        #picture-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #picture-explanation {}
+        #picture-author {
+            position: absolute;
+            bottom: 0;
+        }
+        #picture-date {
+            margin-top: auto;
+        }
+    }
+}

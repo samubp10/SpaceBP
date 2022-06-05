@@ -3,6 +3,12 @@
     <x-spacebpLogo url="{{ Request::root() }}/{{ app()->getLocale() }}/outerSpace" />
 
     <x-nav-bar />
+    
+    <div class="mobile-menu" onclick="this.classList.toggle('open')">
+        <a href="{{ route('gallery.', app()->getLocale()) }}" class="option"></a>
+        <a href="{{ route('news.', app()->getLocale()) }}" class="option"></a>
+        <a href="#" class="option"></a>
+    </div>
 
     <x-switchLang />
     {{-- @livewire('navigation-menu') --}}
@@ -11,8 +17,7 @@
             <div class="wrapper-profile">
 
                 <div class="dropdown">
-                    <a href="{{ Request::root() }}/{{ app()->getLocale() }}/outerSpace"><img id="profile"
-                            src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" /></a>
+                    <img id="profile" src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
 
                     <div class="dropdown-content">
                         <a class="dropdown-item-1" href="{{ route('profile.show', app()->getLocale()) }}">
@@ -49,4 +54,5 @@
     @else
         <x-signButtons />
     @endif
+
 </header>
