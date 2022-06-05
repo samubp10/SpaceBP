@@ -185,6 +185,13 @@ usuarios se han guardado/le han dado favoritos.
     <li>Empezado con la funcionalidad del like</li>
 </ul>
 
+<h3>Semana 5</h3>
+<ul>
+    <li>Terminado la vista de la Galería</li>    
+    <li>Terminado la vista de las Noticias</li>
+    <li>Terminada la vista de una sola foto</li>
+    <li>Sigo con la funcionalidad del like</li>
+</ul>
 
 <h2>Tecnologías</h2>
 
