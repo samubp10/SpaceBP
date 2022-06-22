@@ -237,6 +237,7 @@ Para el despliegue de la aplicación tengo pensado utilizar es Amazon Web Servic
 
 <h3>Video tutorial</h3>
 
+https://youtu.be/G9sR3KCwKAg
 
 <h3>Como usar la aplicación</h3>ç
 
