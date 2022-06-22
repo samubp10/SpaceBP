@@ -54,18 +54,25 @@ Todo lo escrito a partir de aquí está sujeto a cambios.
 ![Noticias-Favoritas](https://user-images.githubusercontent.com/73947252/160790087-7df53f0f-2a22-48a2-8206-d6e27578f770.png)
 
 <h3>Roles de usuarios</h3>
+
+<h4>Super Administrador</h4>
+<ul>
+    <li>
+        El usuario super administrador podrá eliminar y editar a usuarios super administradores, administradores y normales. 
+    </li>
+</ul>
 <h4>Administrador</h4>
 <ul>
     <li>
-        El usuario administrador podrá eliminar, editar y crear, tanto noticias como las fotos de la galería, como
-        publicaciones.
+          El usuario super administrador podrá eliminar y editar a usuarios administradores y normale. 
+
     </li>
 </ul>
 
 <h4>Usuario normal</h4>
 <ul>
     <li>
-        Este usuario podrá guardarse tanto fotos como noticias y subir publicaciones.
+        Este usuario podrá guardarse tanto fotos como noticias.
     </li>
 </ul>
 
@@ -191,6 +198,14 @@ usuarios se han guardado/le han dado favoritos.
     <li>Terminado la vista de las Noticias</li>
     <li>Terminada la vista de una sola foto</li>
     <li>Sigo con la funcionalidad del like</li>
+</ul>
+
+<h3>Semana 6</h3>
+<ul>
+    <li>Resolución de errores</li>    
+    <li>Terminada la funcionalidad del like</li>
+    <li>Terminada la gestión de usuarios por parte de usuarios administradores y super administradores</li>
+    <li>Paginación</li>
 </ul>
 
 <h2>Tecnologías</h2>
