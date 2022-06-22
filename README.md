@@ -246,32 +246,42 @@ https://youtu.be/G9sR3KCwKAg
 ![LandingPage](https://user-images.githubusercontent.com/73947252/175149486-8f4fd05f-8d56-4fd9-b39e-6b2c55549a1b.png)
 
 <h4>login</h4>
+
 ![Login](https://user-images.githubusercontent.com/73947252/175150036-b29ea64c-8510-42d9-83fc-2a0a29231ea7.png)
 
 <h4>Registro</h4>
+
 ![Registro](https://user-images.githubusercontent.com/73947252/175150443-a7b4aed8-7a92-46a2-bac8-5bd62343c9f2.png)
 
 <h4>Entrar a la aplicación sin autenticación</h4>
 ![SinAutenticacion](https://user-images.githubusercontent.com/73947252/175151039-1c8ec3e6-33c2-416b-9ece-b98dd7aa4c67.png)
 
 <h4>Galería</h4>
+
 ![Galeria](https://user-images.githubusercontent.com/73947252/175151498-aa1fbb3d-eccc-4cc0-a341-7f771abbec60.png)
 
 <h4>Imágenes guardadas</h4>
+
 ![imagenesGuardadas](https://user-images.githubusercontent.com/73947252/175151918-ee5dd288-0caa-4373-83ad-121175c76b36.png)
 
 <h4>Noticias</h4>
+
 ![Noticias](https://user-images.githubusercontent.com/73947252/175152571-98b66bec-3deb-4746-bbc3-567f2550d407.png)
 
 <h4>Noticias guardadas</h4>
+
 ![NoticiasGuardadas](https://user-images.githubusercontent.com/73947252/175153026-582a3e16-7a2c-4f09-9ec4-09080287dd09.png)
 
 <h4>paginacion</h4>
+
 ![paginacion](https://user-images.githubusercontent.com/73947252/175153364-e0dcbc9a-6425-4c3e-9078-81f885ce5744.png)
 
 <h4>Perfil de usuario</h4>
+
 ![Perfil1](https://user-images.githubusercontent.com/73947252/175153672-3ffe23bc-1cfb-4727-8d09-8c7553cfc4b1.png)
+
 ![perfil2](https://user-images.githubusercontent.com/73947252/175153727-5bd060d2-3faf-4c9e-b655-0e0fcffcbad0.png)
+
 ![perfil3](https://user-images.githubusercontent.com/73947252/175153777-c4d17c58-fa5b-48c0-bc6d-f4fb427ba284.png)
 
 
