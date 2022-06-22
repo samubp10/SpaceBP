@@ -64,8 +64,7 @@ Todo lo escrito a partir de aquí está sujeto a cambios.
 <h4>Administrador</h4>
 <ul>
     <li>
-          El usuario super administrador podrá eliminar y editar a usuarios administradores y normale. 
-
+          El usuario super administrador podrá eliminar y editar a usuarios administradores y normales. 
     </li>
 </ul>
 
@@ -223,6 +222,7 @@ profesores:
             <li>CSS3</li>
             <li>JQuery</li>
             <li>A-frame</li>
+            <li>Ajax</li>
             <li>También me estoy planteando utilizar Livewire, pero aún me tengo de documentar sobre esta tecnología</li>
         </ul>
     </li>
