@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class switchLang extends Component
+class mobileMenu extends Component
 {
     /**
      * Create a new component instance.
@@ -12,10 +12,8 @@ class switchLang extends Component
      * @return void
      */
     public $path;
-
     public function __construct($path)
     {
-
         $this->path = $path;
     }
 
@@ -26,6 +24,6 @@ class switchLang extends Component
      */
     public function render()
     {
-        return view('components.switch-lang');
+        return view('components.mobile-menu');
     }
 }

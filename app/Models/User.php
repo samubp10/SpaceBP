@@ -31,6 +31,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'idRole',
     ];
 
     /**
@@ -66,11 +67,11 @@ class User extends Authenticatable
     ];
 
 
-    public function posts()
-    {
+    // public function posts()
+    // {
 
-        return $this->hasMany('App\Models\Post', 'idPost', 'idPost');
-    }
+    //     return $this->hasMany('App\Models\Post', 'idPost', 'idPost');
+    // }
 
     public function role()
     {
@@ -100,7 +101,7 @@ class User extends Authenticatable
 
     public function sendPasswordResetNotification($token)
     {
-        $url =  "/". $token . '?email='.$this->email;
+        $url =  "/" . $token . '?email=' . $this->email;
 
         $this->notify(new ResetPasswordNotification($url));
     }

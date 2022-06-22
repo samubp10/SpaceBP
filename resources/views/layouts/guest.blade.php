@@ -8,6 +8,8 @@
     <link href={{ asset('css/auth.css') }} rel="stylesheet">
     <title>{{ config('app.name', 'Laravel') }}</title>
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/customsbp.js') }}" defer></script>
+
 </head>
 
 <body>
@@ -16,9 +18,16 @@
         <div class="wrapper-content">
 
             <header class="header">
-                <x-spacebpLogo url="{{ Request::root() }}"/>
+                @php
+                    $path = Request::path();
+                    $path = substr($path, 3);
+                    // dd($path);
+                @endphp
+                <x-spacebpLogo url="{{ Request::root() }}" />
 
-                <x-switchLang />
+                <x-switchLang path={{$path}} />
+                <x-mobileMenu path={{$path}} />
+
             </header>
 
             <div class=content>

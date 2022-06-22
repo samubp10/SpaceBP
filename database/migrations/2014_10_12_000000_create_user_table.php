@@ -22,7 +22,7 @@ return new class extends Migration
             $table->rememberToken();
             $table->string('profile_photo_path', 2048)->nullable();
 
-            $table->unsignedInteger('idRole')->default(2);
+            $table->unsignedInteger('idRole')->default(3);
             $table->foreign('idRole')
             ->references('idRole')
             ->on('role')

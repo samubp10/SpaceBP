@@ -16,11 +16,11 @@ class CreatePicturesTable extends Migration
         Schema::create('picture', function (Blueprint $table) {
             $table->increments('idPicture');
             $table->string('title');
-            $table->text('author');
-            $table->text('content');
+            // $table->text('author');
+            $table->text('explanation');
+            $table->boolean('heart');
             $table->date('date');
-            $table->integer('numLikes');
-            $table->text('picture');
+            $table->text('url');
             $table->timestamps();
         });
     }

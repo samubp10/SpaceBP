@@ -1,0 +1,105 @@
+table {
+    border-collapse: collapse;
+    border: white 4px solid;
+    border-radius: 1em;
+    box-shadow: 0 4px 30px white;
+}
+
+#table {
+    overflow-x: auto;
+}
+
+.userTable {
+    color: white;
+    display: flex;
+    text-align: center;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    th {
+        border: white 2px solid;
+        padding: 20px;
+        border-radius: 20px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    th,
+    td {
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+    }
+    td {
+        padding: 20px;
+        border: white 2px solid;
+        border-radius: 20px;
+        // box-shadow: 0 4px 30px white;
+    }
+    #SVGedit {
+        width: 40px;
+    }
+    #SVGdelete {
+        width: 40px;
+    }
+    #deleteRow {
+        padding-left: 35px;
+    }
+}
+
+@media only screen and (max-width: 799px),
+(min-device-width: 799px) and (max-device-width: 799px) {
+    /* Force table to not be like tables anymore */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr {
+        border: 10px solid #ccc;
+    }
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 2px;
+        left: 80px;
+        // margin-bottom: 5px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+    /*
+	Label the data
+	*/
+    td:nth-of-type(1):before {
+        content: "User identification:";
+    }
+    td:nth-of-type(2):before {
+        content: "Name:";
+    }
+    td:nth-of-type(3):before {
+        content: "Email:";
+    }
+    td:nth-of-type(4):before {
+        content: "Role:";
+    }
+    td:nth-of-type(5):before {
+        content: "Edit:";
+    }
+    td:nth-of-type(6):before {
+        content: "Delete:";
+    }
+}

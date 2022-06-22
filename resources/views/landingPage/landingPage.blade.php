@@ -8,6 +8,8 @@
         content="A web page where you can learn and know about the latest news about the outer space.">
     <title>SpaceBP</title>
     <link href={{ asset('css/landingPage.css') }} rel="stylesheet">
+    <script src="{{ asset('js/customsbp.js') }}" defer></script>
+
 </head>
 
 <body>
@@ -15,11 +17,18 @@
 
         <x-bgVideo />
         <div class="wrapper-content">
+            @php
+                $path = Request::path();
+                $path = substr($path, 3);
+                
+            @endphp
             <header class="header">
 
-                <x-spacebpLogo url="{{ Request::root() }}"/>
+                <x-spacebpLogo url="{{ Request::root() }}" />
 
-                <x-switchLang />
+                <x-switchLang path={{$path}} />
+
+                <x-mobileMenu path={{$path}} />
 
                 <x-signButtons />
             </header>
@@ -33,7 +42,7 @@
                     </p>
                 </div>
                 <div class="content-explore">
-                    <a href="{{route('outerspace', app()->getLocale())}}" id="explore">{{ __('Explore') }}</a>
+                    <a href="{{ route('outerspace', app()->getLocale()) }}" id="explore">{{ __('Explore') }}</a>
                 </div>
             </section>
         </div>

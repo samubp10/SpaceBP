@@ -10,23 +10,26 @@ class News extends Model
     use HasFactory;
 
     protected $fillable = [
+        'idNotice',
         'title',
-        'content',
-        'date',
-        'numLikes',
-        'picture',
+        'summary',
+        'publishedAt',
+        'url',
+        'imageUrl',
+        'created_at',
+        'updated_at',
     ];
 
     protected $table = 'news';
     protected $primaryKey = 'idNews';
 
-    public function tag() {
+    // public function tag() {
 
-        return $this->belongsToMany('App\Models\Tag','tagnews','idNew', 'idTag');
-    }
+    //     return $this->belongsToMany('App\Models\Tag','tagnews','idNew', 'idTag');
+    // }
 
     public function userSaved() {
 
-        return $this->belongsToMany('App\Models\Users','usernews','idUser', 'idTag');
+        return $this->belongsToMany('App\Models\News','usernews','idNews', 'idUser');
     }
 }

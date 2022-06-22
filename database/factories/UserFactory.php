@@ -31,7 +31,7 @@ class UserFactory extends Factory
             'email_verified_at' => now(),
             "password" => Hash::make("12345678"), // password
             'remember_token' => Str::random(10),
-            'idRole' => $this->faker->numberBetween(1,2),
+            'idRole' => $this->faker->numberBetween(1,3),
         ];
     }
 

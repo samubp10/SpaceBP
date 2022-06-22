@@ -19,11 +19,11 @@
             autocomplete="{{ __('current-password') }}" placeholder="{{ __('Password') }}" />
 
 
-        @if (Route::has('password.request'))
+        {{-- @if (Route::has('password.request'))
             <a class="link2" id="req_password" href="{{ route('password.request', app()->getLocale(), ['locale' =>  app()->getLocale()]) }}">
                 {{ __('Forgot your password?') }}
             </a>
-        @endif
+        @endif --}}
 
         <div class="link1">
 

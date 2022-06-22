@@ -13,13 +13,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        \App\Models\Role::create(['name' => "SuperAdmin"]);
         \App\Models\Role::create(['name' => "Admin"]);
          \App\Models\Role::create(['name' => "User"]);
          \App\Models\User::factory(10)->create();
-         \App\Models\News::factory(10)->create();
-         \App\Models\Post::factory(10)->create();
-         \App\Models\Picture::factory(10)->create();
-         \App\Models\Tag::factory(10)->create();
+        //  \App\Models\News::factory(10)->create();
+        //  \App\Models\Post::factory(10)->create();
+        //  \App\Models\Picture::factory(10)->create();
+        //  \App\Models\Tag::factory(10)->create();
          
 
 

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\PictureController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -77,15 +78,6 @@ Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-zA-Z]{2}'], 'm
         }
     });
 
-    // Route::middleware([
-    //     'auth:sanctum',
-    //     config('jetstream.auth_session'),
-    //     'verified'
-    // ])->group(function () {
-    //     Route::get('/outerSpace', function () {
-    //         return view('outerSpace.outerSpace');
-    //     })->name('outerspace');
-    // });
 
     Route::get('/outerSpace', function () {
         return view('outerSpace.outerSpace');
@@ -96,8 +88,10 @@ Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-zA-Z]{2}'], 'm
         // Route::get('editar/{tablero}', [tableroController::class, 'editar'])->name('editar');
         Route::get('/', [NewsController::class, 'show']);
 
+        Route::get('like', [NewsController::class, 'like'])->name('like')->middleware(['auth']);
 
-        // Route::post('actualizar/{tablero}', [tableroController::class, 'actualizar'])->name('actualizar');
+
+        Route::get('showSavedNews', [NewsController::class, 'showSavedNews'])->name('showSavedNews')->middleware(['auth']);
 
         // Route::get('borrar/{tablero}', [tableroController::class, 'borrar'])->name('borrar');
 
@@ -112,28 +106,22 @@ Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-zA-Z]{2}'], 'm
 
         Route::get('watch/{date}', [PictureController::class, 'watch'])->name('watch');
 
-        // Route::get('editar/{nota}', [NotaController::class, 'editar'])->name('editar');
+        Route::get('showSavedPictures', [PictureController::class, 'showSavedPictures'])->name('showSavedPictures')->middleware(['auth']);
 
-        // Route::post('actualizar/{nota}', [NotaController::class, 'actualizar'])->name('actualizar');
-
-        // Route::get('borrar/{nota}', [NotaController::class, 'borrar'])->name('borrar');
-
-        // Route::get('verNotas/{etiqueta}', [NotaController::class, 'notasEtiqueta'])->name('verNotas');
-
-        // Route::get('insertar/', [NotaController::class, 'insertar'])->name('insertar');
-
-        // Route::post('crearNota', [NotaController::class, 'crearNota'])->name('crear');
+        Route::get('like', [PictureController::class, 'like'])->name('like')->middleware(['auth']);
     });
 
-    // Route::group(['prefix' => 'solarSystem', 'as' => 'solarSystem.'], function () {
-    //     Route::get('ver/{idN}', [EtiquetaController::class, 'index'])->name('ver');
+    Route::group(['prefix' => 'user', 'as' => 'user.', 'middleware' => 'admin'], function () {
 
-    //     Route::get('editar/{etiqueta}', [EtiquetaController::class, 'editar'])->name('editar');
 
-    //     Route::get('borrar/{etiqueta}', [EtiquetaController::class, 'borrar'])->name('borrar');
+        Route::get('show', [UserController::class, 'show'])->name('show');
 
-    //     Route::post('actualizar/{etiqueta}', [EtiquetaController::class, 'actualizar'])->name('actualizar');
-    // });
+        Route::get('edit/{user}', [UserController::class, 'edit'])->name('edit');
+
+        Route::get('delete/{user}', [UserController::class, 'delete'])->name('delete');
+
+        Route::post('update/{user}', [UserController::class, 'update'])->name('update');
+    });
 });
 
 require_once __DIR__ . './fortify.php';

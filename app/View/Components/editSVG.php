@@ -4,19 +4,16 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class switchLang extends Component
+class editSVG extends Component
 {
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public $path;
-
-    public function __construct($path)
+    public function __construct()
     {
-
-        $this->path = $path;
+        //
     }
 
     /**
@@ -26,6 +23,6 @@ class switchLang extends Component
      */
     public function render()
     {
-        return view('components.switch-lang');
+        return view('components.edit-s-v-g');
     }
 }

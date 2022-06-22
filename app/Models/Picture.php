@@ -11,23 +11,21 @@ class Picture extends Model
 
     protected $fillable = [
         'title',
-        'author',
-        'content',
+        'explanation',
         'date',
-        'numLikes',
-        'picture'
+        'picture',
     ];
 
     protected $table = 'picture';
     protected $primaryKey = 'idPicture';
 
-    public function tagPicture() {
+    // public function tagPicture() {
 
-        return $this->belongsToMany('App\Models\Tag','tagpicture','idPicture', 'idTag');
-    }
+    //     return $this->belongsToMany('App\Models\Tag','tagpicture','idPicture', 'idTag');
+    // }
 
     public function userSaved() {
 
-        return $this->belongsToMany('App\Models\Users','userpicture','idPicture', 'idUser');
+        return $this->belongsToMany('App\Models\Picture','userpicture','idPicture', 'idUser');
     }
 }

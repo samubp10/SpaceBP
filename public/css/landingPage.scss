@@ -47,7 +47,9 @@ body {
         margin-right: 10px;
     }
     .language-switch {
+        display: none;
         @media (min-width: 992px) {
+            display: flex;
             grid-column: 2 / 2;
             grid-row: 1;
         }

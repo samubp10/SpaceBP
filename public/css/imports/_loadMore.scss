@@ -1,0 +1,13 @@
+ .load {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     #loadMore {
+         height: 75px;
+         width: 120px;
+         @include neonButton();
+         background-color: black;
+         margin-bottom: 30px;
+         cursor: pointer;
+     }
+ }
