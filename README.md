@@ -254,6 +254,7 @@ https://youtu.be/G9sR3KCwKAg
 ![Registro](https://user-images.githubusercontent.com/73947252/175150443-a7b4aed8-7a92-46a2-bac8-5bd62343c9f2.png)
 
 <h4>Entrar a la aplicación sin autenticación</h4>
+
 ![SinAutenticacion](https://user-images.githubusercontent.com/73947252/175151039-1c8ec3e6-33c2-416b-9ece-b98dd7aa4c67.png)
 
 <h4>Galería</h4>
