@@ -239,7 +239,7 @@ Para el despliegue de la aplicación tengo pensado utilizar es Amazon Web Servic
 
 https://youtu.be/G9sR3KCwKAg
 
-<h3>Como usar la aplicación</h3>ç
+<h3>Como usar la aplicación</h3>
 
 <h4>Landing page</h4>
 
