@@ -233,13 +233,15 @@ En el caso de cambiar alguna de estas tecnologías por otras, lo hablaré con el
 
 Para el despliegue de la aplicación tengo pensado utilizar es Amazon Web Services, tanto para la base de datos como para web en sí y sería en 2 máquinas separadas.
 
-<h2>Aplicación terminada</h2>
+<h1>Aplicación terminada</h1>
 
-<h3>Video tutorial</h3>
+https://spacebp.com/en
+
+<h2>Video tutorial</h2>
 
 https://youtu.be/G9sR3KCwKAg
 
-<h3>Como usar la aplicación</h3>
+<h2>Como usar la aplicación</h2>
 
 <h4>Landing page</h4>
 
