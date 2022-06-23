@@ -285,5 +285,26 @@ https://youtu.be/G9sR3KCwKAg
 
 ![perfil3](https://user-images.githubusercontent.com/73947252/175153777-c4d17c58-fa5b-48c0-bc6d-f4fb427ba284.png)
 
+<h3>Bibliografía</h3>
 
+Para cambiar las rutas de Fortify: https://www.youtube.com/watch?v=Z3O9Pflsl4g&ab_channel=Codecourse
 
+Para cambiar las rutas de Laravel Jetstream: https://www.youtube.com/watch?v=jEHxoMXmKhs&ab_channel=Codecourse
+
+Documentación de Laravel: https://laravel.com/docs/8.x/installation
+
+Documentación de Livewire: https://laravel-livewire.com/docs/2.x/quickstart
+
+Documentación API Nasa: https://api.nasa.gov/
+
+API noticias: https://www.spaceflightnewsapi.net/
+
+Documentación API noticias: https://api.spaceflightnewsapi.net/v3/documentation
+
+Sistema solar utilizado: https://paulohscwb.github.io/solar-system/vr/solar.html
+
+Para utilizar Ajax he utilizado los apuntes de Mayorga.
+
+Documentación de Sass: https://sass-lang.com/documentation/
+
+Documentación de Laravel Jetstream: https://jetstream.laravel.com/2.x/introduction.html
